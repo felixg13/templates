@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage[french]{babel}
+\usepackage{graphicx}
+\usepackage{tikz}
+
+\newcommand{\coursecode}{INF9999}
+\newcommand{\coursetitle}{Nom du Cours}
+\newcommand{\labnumber}{2}
+\newcommand{\authors}{
+   {foo, bar - 123456789},
+   {fee, bat - 123456789},
+ }
+\begin{document}
+
+\input{src/sections/titlepage}
+
+\tableofcontents
+\clearpage
+
+\input{src/sections/section-example}
+
+\clearpage
+\bibliographystyle{IEEEtran}
+\bibliography{src/references} 
+\addcontentsline{toc}{section}{Références}
+
+\end{document}
