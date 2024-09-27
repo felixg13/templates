@@ -1,0 +1,3 @@
+\babel@toc {french}{}\relax 
+\contentsline {section}{Example}{2}{}%
+\contentsline {section}{Références}{3}{}%
