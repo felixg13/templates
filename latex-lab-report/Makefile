@@ -4,6 +4,7 @@ OUTDIR=build
 TEXFILE=$(SRC_DIR)/rapport.tex
 SECTFILES=$(wildcard $(SECTION_DIR)/*.tex)
 PDFFILE=$(basename $(notdir $(TEXFILE))).pdf
+REMISEFILE=nom-matricule.pdf
 
 TEXFILES=$(TEXFILE) $(SECTFILES)
 
@@ -18,4 +19,9 @@ clean:
 
 run: all
 	xdg-open $(OUTDIR)/$(PDFFILE)
+
+remise: all
+	mv $(OUTDIR)/$(PDFFILE) $(REMISEFILE)
+	rm -rf $(OUTDIR)
+	xdg-open $(REMISEFILE)
 
