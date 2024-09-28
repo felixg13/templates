@@ -10,6 +10,15 @@
    {foo, bar - 123456789},
    {fee, bat - 123456789},
  }
+\newcommand{\subQuestion}[2]{%
+  \item \textbf{#1}\\ #2%
+}
+
+\newenvironment{question}{%
+  \begin{enumerate}[label=\alph*)]%
+}{%
+  \end{enumerate}%
+}
 \begin{document}
 
 \input{src/sections/titlepage}
